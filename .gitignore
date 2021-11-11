@@ -1,0 +1,28 @@
+# Dependencies
+/node_modules
+
+# Prisma
+/prisma/*.db
+
+.env
+
+# Misc
+.DS_Store
+.idea
+.history
+
+npm-debug.log*
+
+# sonar
+.scannerwork
+
+# docs
+/docs
+
+# coverage
+/coverage
+/dist
+
+# logs
+combined.log
+error.log

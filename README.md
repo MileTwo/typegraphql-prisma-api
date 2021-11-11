@@ -1,0 +1,1 @@
+https://prisma.typegraphql.com/
