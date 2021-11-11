@@ -27,8 +27,10 @@ async function main() {
     plugins: [ApolloServerPluginLandingPageGraphQLPlayground()],
     context: (): Context => ({ prisma }),
   });
-  const { port } = await server.listen(process.env.APOLLO_SERVER_PORT);
-  console.log(`GraphQL is listening on http://localhost:${port}/graphql`);
+  const { port } = await server.listen(process.env.APOLLO_SERVER_PORT || 4000);
+  console.log(
+    `GraphQL Server is listening on http://localhost:${port}/graphql`
+  );
 }
 
 main().catch(console.error);
