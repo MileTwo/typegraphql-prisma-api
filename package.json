@@ -1,10 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "build": "rm -rf dist/ && tsc --project tsconfig.json",
     "start:old": "ts-node --transpile-only src/index.ts",
     "predev": "prisma generate",
-    "dev": "nodemon -w src --ext ts --exec 'ts-node -r tsconfig-paths/register src/index.ts'",
+    "dev": "nodemon -w src --ext ts --exec 'ts-node -r tsconfig-paths/register --transpile-only src/index.ts'",
     "start": "ts-node -r tsconfig-paths/register src/index.ts",
     "seed": "ts-node --transpile-only ./prisma/seed.ts",
     "generate": "prisma generate",
