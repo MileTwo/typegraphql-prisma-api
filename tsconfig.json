@@ -11,21 +11,10 @@
         "sourceMap": true,
         "outDir": "dist",
         "declaration": true,
-        "lib": [
-            "es2019",
-            "esnext.asynciterable"
-        ],
-        "typeRoots": [
-            "./node_modules/@types",
-            "./types"
-        ],
-        "baseUrl": "src/",
+        "lib": ["es2019", "esnext.asynciterable"],
+        "typeRoots": ["./node_modules/@types", "./types"],
+        "baseUrl": "src/"
     },
-    "include": [
-        "src/"
-    ],
-    "exclude": [
-        "node_modules/",
-        "**/*.{spec,test}.{ts,tsx}"
-    ]
+    "include": ["src/"],
+    "exclude": ["node_modules/", "**/*.{spec,test}.{ts,tsx}"]
 }
