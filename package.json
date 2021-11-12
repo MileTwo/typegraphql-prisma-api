@@ -1,4 +1,7 @@
 {
+  "name": "typgraphql-prisma-api",
+  "version": "1.0.0",
+  "description": "",
   "private": true,
   "scripts": {
     "start:old": "ts-node --transpile-only src/index.ts",
@@ -12,9 +15,8 @@
     "reset": "prisma migrate reset",
     "studio": "prisma studio",
     "prisma": "prisma format && npm run migrate && npm run seed",
-    "postinstall": "prisma generate",
     "lint": "eslint .",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "type-check": "tsc",
     "quality": "npm install --silent && npm run type-check && npm run lint && npm run test"
   },
