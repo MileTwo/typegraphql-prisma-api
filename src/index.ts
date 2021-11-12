@@ -3,7 +3,7 @@ import { buildSchema } from 'type-graphql';
 import { ApolloServer } from 'apollo-server';
 import { ApolloServerPluginLandingPageGraphQLPlayground } from 'apollo-server-core';
 import { PrismaClient } from '@prisma/client';
-import { resolvers } from '../prisma/generated/type-graphql';
+import { resolvers } from '@generated/type-graphql';
 import path from 'path';
 
 interface Context {
