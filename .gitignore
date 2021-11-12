@@ -4,8 +4,6 @@
 # Prisma
 /prisma/*.db
 
-.env
-
 # Misc
 .DS_Store
 .idea
