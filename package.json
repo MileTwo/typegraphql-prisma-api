@@ -15,7 +15,6 @@
         "reset": "prisma migrate reset",
         "studio": "prisma studio",
         "prisma": "prisma format && npm run migrate && npm run seed",
-        "postinstall": "prisma generate",
         "test": "jest --passWithNoTests",
         "test:ci": "npm run test",
         "test:unit": "npm run test",
